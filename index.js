@@ -1,7 +1,7 @@
-function takeANumber(currentLineOfPeople, newPersonName){
-  // push returns the count after addition made
-  var numberInLine = currentLineOfPeople.push(newPersonName) 
-  return `Welcome, ${newPersonName}. You are number ${numberInLine} in line.`
+var counter = 0 
+function takeANumber(currentLineOfPeople){
+  currentLineOfPeople.push( ++counter ) 
+  return `Welcome. You are number ${counter}.`
 }
 
 function nowServing(katzDeliLine){
